@@ -23,7 +23,7 @@ svg {
 
 /* About Section Styles */
 .about .row .col-lg-6 {
-  height: 400px;
+  /* height: 400px; */
   background-size: cover;
   background-position: center;
 }
@@ -46,11 +46,11 @@ svg {
   background-repeat: no-repeat;
 }
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
   .about .row .col-lg-6 {
     height: 300px;
   }
-}
+} */
 
 /* Project Card Styles */
 .project-card {
@@ -250,7 +250,7 @@ h6 {
 
 
 .full-screen {
-  padding: 8rem 0;
+  padding: 4rem 0;
 }
 
 .small-text {
@@ -296,8 +296,7 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
+h5 {
   font-weight: bold;
   letter-spacing: -1px;
 }
@@ -838,8 +837,37 @@ strong {
     display: none;
   }
 
+  .about.full-screen .col-lg-7 {
+    position: relative;
+  }
+
+  .about.full-screen .col-lg-5 {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 350px;
+    z-index: 1;
+  }
+
   .about-image {
-    margin-top: 4em;
+    margin-top: 0;
+  }
+
+  .custom-btn-group {
+    position: relative;
+    z-index: 2;
+  }
+
+  .about#about {
+    padding-top: 0;
+    margin-top: -180px;
+    padding-bottom: 50px;
+  }
+
+  .about-img {
+    margin: 0 auto;
   }
 
   .mobile-mt-2,
@@ -885,8 +913,9 @@ strong {
     font-size: 30px;
   }
 
-  .custom-btn-group {
+   .custom-btn-group {
     text-align: center;
+    margin-top: 270px;
   }
 
   .custom-btn {
